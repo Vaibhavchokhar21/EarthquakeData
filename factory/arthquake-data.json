@@ -1,0 +1,9 @@
+{
+	"name": "arthquake-data",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2a4af7ae-04e1-40c2-b098-2c60a7e60833",
+		"tenantId": "f9a318c8-9bb0-4655-8fdd-cc4467fbb864"
+	}
+}
