@@ -38,7 +38,10 @@
 				"inputs": [
 					{
 						"referenceName": "RestResource1api",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"input": "all_day.geojson"
+						}
 					}
 				],
 				"outputs": [

@@ -5,8 +5,19 @@
 			"referenceName": "RestService1linkservice",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"input": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": {
+				"value": "@dataset().input",
+				"type": "Expression"
+			}
+		},
 		"schema": []
 	}
 }

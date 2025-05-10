@@ -10,6 +10,14 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "Daily_data/@{formatDateTime(addDays(utcNow(), -1),'yyyyMMdd')}.jeojson",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "Bronze_layer/@{formatDateTime(addDays(utcNow(), -1),'yyyyMMdd')}",
+					"type": "Expression"
+				},
 				"fileSystem": "inputarthquakedata"
 			}
 		},
