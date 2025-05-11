@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "data_copy_earthquake",
+				"name": "data_copy_earthquake1",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
