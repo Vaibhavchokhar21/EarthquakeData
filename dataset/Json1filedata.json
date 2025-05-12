@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "Daily_data/@{formatDateTime(addDays(utcNow(), -1),'yyyyMMdd')}.jeojson",
+					"value": "earthquake_data/@{formatDateTime(utcNow(),'yyyyMMddHHmmss')}.json",
 					"type": "Expression"
 				},
 				"folderPath": {

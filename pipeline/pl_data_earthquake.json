@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "data_copy_earthquake1",
+				"name": "act_copy_ingest_earthquake_data",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -40,7 +40,10 @@
 						"referenceName": "RestResource1api",
 						"type": "DatasetReference",
 						"parameters": {
-							"input": "all_day.geojson"
+							"input": {
+								"value": "@pipeline().parameters.relative_url",
+								"type": "Expression"
+							}
 						}
 					}
 				],
@@ -52,6 +55,11 @@
 				]
 			}
 		],
+		"parameters": {
+			"relative_url": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
