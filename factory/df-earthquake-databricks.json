@@ -1,0 +1,9 @@
+{
+	"name": "df-earthquake-databricks",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e52f5aac-0d86-4862-9c52-d9694eb5c08c",
+		"tenantId": "3f4ded5e-e32f-4673-b6cd-b0c66183eacf"
+	}
+}
